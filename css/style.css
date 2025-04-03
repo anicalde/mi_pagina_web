@@ -84,8 +84,8 @@ header .social-media a i {
 
 .product-img {
     width: 100%; /* Las imágenes ocuparán todo el ancho de la tarjeta */
-    height: 200px; /* Las imágenes tendrán una altura consistente */
-    object-fit: cover; /* Mantiene la proporción de la imagen sin deformarse */
+    height: auto; /* Ajusta la altura automáticamente */
+    object-fit: contain; /* Asegura que la imagen no se recorte */
     border-radius: 8px;
 }
 
@@ -135,6 +135,7 @@ footer {
     }
 
     .product-img {
-        height: 180px; /* Ajuste de la altura de las imágenes en pantallas pequeñas */
+        height: auto; /* Ajuste automático de la altura */
+        object-fit: contain; /* Asegura que la imagen no se recorte */
     }
 }
